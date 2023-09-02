@@ -1,0 +1,142 @@
+/*
+Author: Cassie Lewis
+https://clewisdev.com
+Date: 
+*/
+
+/****** VARIABLES ******/
+
+:root {
+    
+  /*COLORS*/
+  --bg: #23252C;
+  --text-color: white;
+  --card-bg: #1A1B21;
+  --footer-bg: #161619;
+
+  --blue: #4f4cf8;
+  --red: #cc2936ff;
+  --tangerine: #fc8c47ff;
+  --sunglow: #ffce63ff;
+  --cosmic-latte: #fffbe9ff;
+  
+  /*BORDER RADIUS*/
+  --br-soft: .5rem;
+  --br-round: 50%;
+  
+  /*FONT SIZES*/
+  --fs-s: 1.25rem;
+  --fs-m: 1.5rem;
+  --fs-l: 2rem;
+  --fs-title: 2.5rem;
+}
+
+/****** MARGIN AND PADDING RESET ******/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/******* GLOBAL STYLES *******/
+
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--bg);
+  color: var(--text-color);
+  padding: 2rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: .25rem;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 1.3rem;
+  border-top-left-radius: var(--br-soft);
+  border-top-right-radius: var(--br-soft);
+}
+
+h1 {
+  font-size: var(--fs-l);
+  margin-bottom: .375rem;
+}
+
+h2,
+h3,
+.header-links {
+  font-size: var(--fs-s);
+}
+
+h2 {
+  color: var(--sunglow);
+  margin-bottom: .5rem;
+}
+
+h3 {
+  margin-bottom: 1rem;
+}
+
+header {
+  background-color: var(--card-bg);
+}
+
+/*====== HEADER LINK STYLING ======*/
+
+.header-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.email-link,
+.linkedin-link {
+  text-align: center;
+  color: var(--text-color);
+  width: 120px;
+  padding: 9px 13px 9px 11px; 
+  margin-bottom: 2.625rem;
+  border-radius: var(--br-soft);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.email-link {
+  background-color: var(--red);
+}
+
+.linkedin-link {
+  background-color: var(--blue);
+}
+
+/*====== lAYOUT ======*/
+
+.main-container {
+  max-width: 320px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: var(--br-soft);
+}
